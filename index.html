@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>CRUD Operations</title>
+    <link type="text/css" rel="stylesheet" href="style.css"
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for = "cursoCode">Codigo de Curso</label>
+                        <input type="text" name="cursoCode" id="cursoCode">
+                    </div>
+                    <div>
+                        <label for = "nombreCurso">Nombre del Curso</label>
+                        <input type="text" name="nombreCurso" id="nombreCurso">
+                    </div>
+                    <div>
+                        <label for = "numCupos">Cupo Disponible</label>
+                        <input type="number" name="numCupos" id="numCupos">
+                    </div>
+                    <div>
+                        <label for = "perPrecio">Precio</label>
+                        <input type="number" name="perPrecio" id="perPrecio">
+                    </div>
+                    <div class="form_action--button">
+                        <input type= "submit" value="Guardar">
+                        <input type="reset" value="Resetear">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Codigo de Curso</th>
+                                <th>Nombre del Curso</th>
+                                <th>Cupo Disponible</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
